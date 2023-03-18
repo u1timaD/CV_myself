@@ -1,10 +1,12 @@
 *, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  border: none;
   box-sizing: border-box;
 }
 
 body, html {
-  margin: 0;
-  padding: 0;
+
 }
 
 html {
@@ -21,6 +23,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 p {
@@ -28,25 +31,46 @@ p {
   margin: 0;
 }
 
-ul, li {
+a {
+  text-decoration: none;
+  color: black
+}
+
+ul, li, ol {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
+.container {
+  width: 100%;
+  max-width: 128rem;
+  margin: 0 auto;
+  padding: 0 6rem;
+}
+
 .header {
+  position: absolute;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  background-color: blue;
 }
 
 .main {
   display: flex;
   flex-direction: column;
+  flex: 1 1 auto;
+  width: 100%;
 }
+
+/* Intro */
 
 .intro {
   display: flex;
+  background-color: coral;
+  padding-top: 9rem;
 }
 
 .intro p {
@@ -63,8 +87,13 @@ ul, li {
 /* About-me  */
 
 .about-me {
+  background-color: blueviolet;
+}
+
+.about-me__container {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .about-me__contacts {
@@ -77,6 +106,10 @@ ul, li {
 /* Skills */
 
 .skills {
+  background-color: teal
+}
+
+.skills__container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -95,6 +128,10 @@ ul, li {
 /* Projects  */
 
 .projects {
+  background-color: goldenrod;
+}
+
+.projects__container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -109,6 +146,10 @@ ul, li {
 
 /* education */
 .education {
+  background-color: indianred;
+}
+
+.education__container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -130,11 +171,14 @@ ul, li {
 /* footer */
 
 .footer {
- min-height: 3rem;
+  display: flex;
+  width: 100%;
+  min-height: 3rem;background-color: olive;
 }
 
 .footer__container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  align-self: center;
 }
