@@ -1,4 +1,140 @@
-* {
-  margin: 0 auto;
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
   padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-style: normal;
+  font-family: 'Courier New', Courier, monospace;
+  /* font-size: 62.5%; */
+  font-size: 16px;
+  line-height: 24px;
+  color: black;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  display: block;
+  margin: 0;
+}
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.intro {
+  display: flex;
+}
+
+.intro p {
+  max-width: 400px;
+}
+.intro__block {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+/* About-me  */
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-me__contacts {
+  display: flex;
+  /* flex-direction: column; */
+}
+
+
+
+/* Skills */
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills__wrapper {
+  display: flex;
+
+}
+
+.skills__program {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Projects  */
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects__list {
+  display: flex;
+  flex-direction: row;
+  column-gap: 2rem;
+}
+
+
+/* education */
+.education {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.languages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.courses {
+  display: flex;
+  flex-direction: row;
+  column-gap: 4rem;
+}
+
+
+/* footer */
+
+.footer {
+ min-height: 3rem;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
